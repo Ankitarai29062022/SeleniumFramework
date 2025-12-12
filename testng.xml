@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+  <test name="SmokeTests">
+    <classes>
+      <class name="testngScript.TC07_PropertiesFile"/>
+      <class name="testngScript.TC06_TakeScreenshotOfWebTable"/>
+    </classes>
+  </test>
+</suite>

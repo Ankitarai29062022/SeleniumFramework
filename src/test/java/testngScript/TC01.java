@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class TC01 {
@@ -16,9 +16,7 @@ public class TC01 {
 	@Test
 	public void test1() throws Throwable {
 		
-		//iframe Program
-		
-		//WebDriverManager.chromedriver().setup();
+	
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://ui.vision/demo/webtest/frames/");
 		driver.manage().window().maximize();
