@@ -1,17 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-10T09:39:53 IST" name="Default suite" finished-at="2025-12-10T09:40:05 IST" duration-ms="12415">
+  <suite started-at="2025-12-19T08:33:13 IST" name="AutomationSuite" finished-at="2025-12-19T08:33:28 IST" duration-ms="15171">
     <groups>
     </groups>
-    <test started-at="2025-12-10T09:39:53 IST" name="Default test" finished-at="2025-12-10T09:40:05 IST" duration-ms="12415">
-      <class name="testngScript.TC08_BrokenLink">
-        <test-method signature="brokLink()[pri:0, instance:testngScript.TC08_BrokenLink@3754a4bf]" started-at="2025-12-10T09:39:53 IST" name="brokLink" finished-at="2025-12-10T09:40:05 IST" duration-ms="12365" status="PASS">
+    <test started-at="2025-12-19T08:33:13 IST" name="SmokeTests" finished-at="2025-12-19T08:33:28 IST" duration-ms="15171">
+      <class name="ParallelExecution.TC02">
+        <test-method is-config="true" signature="launching(java.lang.String)[pri:0, instance:ParallelExecution.TC02@fa4c865]" started-at="2025-12-19T08:33:13 IST" name="launching" finished-at="2025-12-19T08:33:15 IST" duration-ms="2597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brokLink -->
-      </class> <!-- testngScript.TC08_BrokenLink -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- launching -->
+        <test-method signature="Search2()[pri:0, instance:ParallelExecution.TC02@fa4c865]" started-at="2025-12-19T08:33:15 IST" name="Search2" finished-at="2025-12-19T08:33:15 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search2 -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ParallelExecution.TC02@fa4c865]" started-at="2025-12-19T08:33:15 IST" name="quit" finished-at="2025-12-19T08:33:16 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launching(java.lang.String)[pri:0, instance:ParallelExecution.TC02@fa4c865]" started-at="2025-12-19T08:33:16 IST" name="launching" finished-at="2025-12-19T08:33:18 IST" duration-ms="2705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method signature="SearchToys()[pri:0, instance:ParallelExecution.TC02@fa4c865]" started-at="2025-12-19T08:33:18 IST" name="SearchToys" finished-at="2025-12-19T08:33:18 IST" duration-ms="81" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[id='twotabsearchtextbox']"}
+  (Session info: chrome=143.0.7499.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [209583c95effd702ac826afc9180d439, findElement {using=css selector, value=input[id='twotabsearchtextbox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\Raian\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59716}, goog:processID: 19492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59716/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 209583c95effd702ac826afc9180d439]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[id='twotabsearchtextbox']"}
+  (Session info: chrome=143.0.7499.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [209583c95effd702ac826afc9180d439, findElement {using=css selector, value=input[id='twotabsearchtextbox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\Raian\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59716}, goog:processID: 19492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59716/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 209583c95effd702ac826afc9180d439
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at ParallelExecution.TC02.SearchToys(TC02.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchToys -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ParallelExecution.TC02@fa4c865]" started-at="2025-12-19T08:33:18 IST" name="quit" finished-at="2025-12-19T08:33:19 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- ParallelExecution.TC02 -->
+      <class name="ParallelExecution.TC01">
+        <test-method is-config="true" signature="launching(java.lang.String)[pri:0, instance:ParallelExecution.TC01@682b2fa]" started-at="2025-12-19T08:33:13 IST" name="launching" finished-at="2025-12-19T08:33:15 IST" duration-ms="2564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method signature="Search()[pri:0, instance:ParallelExecution.TC01@682b2fa]" started-at="2025-12-19T08:33:15 IST" name="Search" finished-at="2025-12-19T08:33:15 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ParallelExecution.TC01@682b2fa]" started-at="2025-12-19T08:33:15 IST" name="quit" finished-at="2025-12-19T08:33:16 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launching(java.lang.String)[pri:0, instance:ParallelExecution.TC01@682b2fa]" started-at="2025-12-19T08:33:16 IST" name="launching" finished-at="2025-12-19T08:33:18 IST" duration-ms="2163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method signature="SearchShoes()[pri:0, instance:ParallelExecution.TC01@682b2fa]" started-at="2025-12-19T08:33:18 IST" name="SearchShoes" finished-at="2025-12-19T08:33:28 IST" duration-ms="9953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchShoes -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ParallelExecution.TC01@682b2fa]" started-at="2025-12-19T08:33:28 IST" name="quit" finished-at="2025-12-19T08:33:28 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- ParallelExecution.TC01 -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- AutomationSuite -->
 </testng-results>

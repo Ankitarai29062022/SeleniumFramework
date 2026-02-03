@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="ParallelExecution.TC02">
+        <methods>
+          <include name="SearchToys"/>
+          <include name="launching"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC02 -->
+      <class name="ParallelExecution.TC01">
+        <methods>
+          <include name="SearchShoes"/>
+          <include name="launching"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC01 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="ParallelExecution.TC02">
+        <methods>
+          <include name="SearchToys"/>
+          <include name="launching"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC02 -->
+      <class name="ParallelExecution.TC01">
+        <methods>
+          <include name="SearchShoes"/>
+          <include name="launching"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC01 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="ParallelExecution.TC02">
+        <methods>
+          <include name="SearchToys"/>
+          <include name="launching"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC02 -->
+      <class name="ParallelExecution.TC01">
+        <methods>
+          <include name="SearchShoes"/>
+          <include name="launching"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC01 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

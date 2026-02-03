@@ -1,9 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="AutomationSuite">
-  <test name="SmokeTests">
+<suite parallel="methods" name="Suite">
+  <test thread-count="5" parallel="tests" name="Test">
     <classes>
-      <class name="testngScript.TC07_PropertiesFile"/>
-      <class name="testngScript.TC06_TakeScreenshotOfWebTable"/>
+      <class name="ParallelExecution.TC02"/>
+      <class name="ParallelExecution.TC01"/>
+      
     </classes>
-  </test>
-</suite>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" parallel="tests" name="Test1">
+    <classes>
+      <class name="ParallelExecution.TC02"/>
+      <class name="ParallelExecution.TC01"/>
+      <class name="ParallelExecution.TC02"/>
+      <class name="ParallelExecution.TC01"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" parallel="tests" name="Test2">
+    <classes>
+      <class name="ParallelExecution.TC02"/>
+      <class name="ParallelExecution.TC01"/>
+      <class name="ParallelExecution.TC02"/>
+      <class name="ParallelExecution.TC01"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

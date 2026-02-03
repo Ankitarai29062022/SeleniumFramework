@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="SmokeTests(failed)">
+<suite thread-count="2" parallel="classes" name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="SmokeTests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testngScript.TC07_PropertiesFile">
+      <class name="ParallelExecution.TC02">
         <methods>
+          <include name="SearchToys"/>
+          <include name="launching"/>
           <include name="quit"/>
-          <include name="start"/>
-          <include name="PrpCall"/>
         </methods>
-      </class> <!-- testngScript.TC07_PropertiesFile -->
+      </class> <!-- ParallelExecution.TC02 -->
     </classes>
   </test> <!-- SmokeTests(failed) -->
 </suite> <!-- Failed suite [AutomationSuite] -->

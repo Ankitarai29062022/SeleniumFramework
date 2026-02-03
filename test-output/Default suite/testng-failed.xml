@@ -3,20 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngScript.TestNGSeleniumExample">
+      <class name="TestScripts.TC03_StaleElementException">
         <methods>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="testFacebookTitle"/>
-          <include name="beforeSuite"/>
-          <include name="beforeTest"/>
-          <include name="testGoogleTitle"/>
+          <include name="Launching"/>
+          <include name="staleEl"/>
         </methods>
-      </class> <!-- testngScript.TestNGSeleniumExample -->
+      </class> <!-- TestScripts.TC03_StaleElementException -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

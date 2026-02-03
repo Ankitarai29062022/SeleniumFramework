@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" parallel="classes" name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="SmokeTests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testngScript.TestNGSeleniumExample">
+      <class name="ParallelExecution.TC02">
         <methods>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="testFacebookTitle"/>
-          <include name="beforeSuite"/>
-          <include name="beforeTest"/>
-          <include name="testGoogleTitle"/>
+          <include name="SearchToys"/>
+          <include name="launching"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- testngScript.TestNGSeleniumExample -->
+      </class> <!-- ParallelExecution.TC02 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SmokeTests(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
